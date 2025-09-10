@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../scripts/api.js" defer></script>
+        <link rel="stylesheet" href="../styles/style.css"> 
+    </head>
+    <body>
+        <header>
+            <h1>Busque informações sobre livros</h1>
+            <div>
+                
+            </div>
+        </header>
+        <main>
+            <!-- título, autor, descrição, text snippet, n° páginas, editora, data da edição, ISBN_10, thumbnail, categories  --> 
+            <div id="form">
+                Título do livro: <input type="text" autocomplete="off" id="nome" style="width: 90%">
+                <section> Edição <input id="btn" type="number" min="0" max="100" value="0">
+</section>
+                <section> Salvar <input type="checkbox" id="local">
+</section>
+                <button id="enviar" style="background-color: rgb(143, 100, 184); margin: 2px">Enviar</button>
+            </div>
+            <div id="info">
+                <h3 style="text-align: center">Título: </h3>
+                <figure style="display: flex; flex-direction: column; align-items: center">
+                    <img id="capa" width="200vw" height="auto"> 
+                    <figcaption>Capa da edição</figcaption>
+                </figure>
+                <p>Autor: </p>
+                <p>sub-título: </p>
+                <p>Categoria: </p>
+                <p>Descrição: </p>
+                <p>Editora: </p>
+                <p>Data da edição: </p>
+                <p>N° Páginas: </p>
+                <p>Frase: </p>
+                <p>ISBN: </p>
+            </div>
+        </main>
+        <footer>...</footer>
+    </body>
+</html>
